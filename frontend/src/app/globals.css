@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-gray-900 text-gray-100 leading-relaxed antialiased;
+  @apply container mx-auto
+}
+
+.table-water {
+  @apply w-full border-collapse border border-gray-700 text-left text-sm text-gray-200;
+}
+
+.table-water th,
+.table-water td {
+  @apply border border-gray-700 px-4 py-2;
+}
+
+.table-water th {
+  @apply bg-gray-800 font-semibold text-lg;
+}
+
+.table-water tbody tr:nth-child(even) {
+  @apply bg-gray-800;
+}
+
+.table-water tbody tr:hover {
+  @apply bg-gray-700;
+}
+
+.dialog-water {
+  @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+         bg-gray-800 text-gray-100 rounded-lg p-6 shadow-xl 
+         backdrop:backdrop-blur-sm border border-gray-700 
+         w-[90%] max-w-lg z-50;
+}
+
+
